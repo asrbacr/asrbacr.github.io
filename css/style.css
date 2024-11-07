@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.caveat-Bold {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.caveat-Medium {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.open-sans-Medium-italic {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.open-sans-Regular-italic {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.center {
+  padding-left: calc(50% - 700px);
+  padding-right: calc(50% - 700px);
+}
+
+.title {
+  background-color: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.title h1 {
+  font-size: 68px;
+}
+.title h2 {
+  font-size: 30px;
+}
+.title__text {
+  text-decoration: none;
+  color: black;
+  font-size: 22px;
+}
+.title__left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.title__img {
+  max-width: 450px;
+  border-radius: 50%;
+}
+.title__links {
+  display: flex;
+  gap: 20px;
+}
+.title__link img {
+  width: 50px;
+  height: 50px;
+}
+
+.project {
+  background-color: #daf1cb;
+}
+.project__header {
+  font-size: 36px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.project__elem {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+.project__elem:not(:last-child) {
+  border-bottom: 1px #a6bd97 solid;
+}
+.project__scroll {
+  width: 700px;
+  max-height: 500px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.project__iframe {
+  width: 100%;
+  height: auto;
+}
+.project_data {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.project__h3 {
+  font-size: 28px;
+}
+.project__text {
+  font-size: 20px;
+}
+.project__ul {
+  display: flex;
+  gap: 30px;
+}
+.project__logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.figma {
+  border: 3px solid #000;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.footer {
+  background-color: #fad9d9;
+}
+.footer__div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+}
+.footer__ul {
+  display: flex;
+  gap: 15px;
+}
+.footer__link img {
+  width: 50px;
+  height: 50px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,178 @@
+$widthPage: 1400px;
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.caveat-Bold {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.caveat-Medium {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.open-sans-Medium-italic {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.open-sans-Regular-italic {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.center {
+  padding-left: calc(50% - $widthPage / 2);
+  padding-right: calc(50% - $widthPage / 2);
+}
+
+.title {
+  background-color: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  h1 {
+    font-size: 68px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  &__text {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__img {
+    max-width: 450px;
+    border-radius: 50%;
+  }
+
+  &__links {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__link {
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
+
+.project {
+  background-color: #daf1cb;
+
+  &__header {
+    font-size: 36px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  &__elem {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+
+  &__elem:not(:last-child) {
+    border-bottom: 1px #a6bd97 solid;
+  }
+
+  &__scroll {
+    width: 700px;
+    max-height: 500px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  &__iframe {
+    width: 100%;
+    height: auto;
+  }
+
+  &_data {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__h3 {
+    font-size: 28px;
+  }
+
+  &__text {
+    font-size: 20px;
+  }
+
+  &__ul {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__logo {
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
+
+.figma {
+  border: 3px solid #000;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.footer {
+  background-color: #fad9d9;
+  
+  &__div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+
+  }
+  &__ul {
+    display: flex;
+    gap: 15px;
+  }
+
+  &__link {
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
