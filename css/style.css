@@ -1,3 +1,8 @@
+.center {
+  padding-left: calc(50% - 700px);
+  padding-right: calc(50% - 700px);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -32,13 +37,15 @@
   font-style: italic;
 }
 
-.center {
-  padding-left: calc(50% - 700px);
-  padding-right: calc(50% - 700px);
+.img__link {
+  width: 50px;
+  height: 50px;
 }
 
 .title {
   background-color: #fafafa;
+}
+.title__box {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,10 +76,6 @@
 .title__links {
   display: flex;
   gap: 20px;
-}
-.title__link img {
-  width: 50px;
-  height: 50px;
 }
 
 .project {
@@ -105,7 +108,7 @@
   width: 100%;
   height: auto;
 }
-.project_data {
+.project__data {
   max-width: 500px;
   display: flex;
   flex-direction: column;
@@ -119,11 +122,7 @@
 }
 .project__ul {
   display: flex;
-  gap: 30px;
-}
-.project__logo img {
-  width: 50px;
-  height: 50px;
+  gap: 20px;
 }
 
 .figma {
@@ -135,7 +134,7 @@
 .footer {
   background-color: #fad9d9;
 }
-.footer__div {
+.footer__box {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -145,7 +144,89 @@
   display: flex;
   gap: 15px;
 }
-.footer__link img {
-  width: 50px;
-  height: 50px;
+
+@media (max-width: 1261px) {
+  .center {
+    padding-left: calc(50% - 630px);
+    padding-right: calc(50% - 630px);
+  }
+  .title__box {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+  .title h1 {
+    font-size: 58px;
+  }
+  .title h2 {
+    font-size: 28px;
+  }
+  .title__img {
+    max-width: 400px;
+  }
+  .project__box {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .project__header {
+    font-size: 32px;
+  }
+  .project__elem {
+    gap: 20px;
+  }
+  .project__h3 {
+    font-size: 24px;
+  }
+  .project__text {
+    font-size: 16px;
+  }
+}
+@media (max-width: 769px) {
+  .center {
+    padding-left: calc(50% - 384px);
+    padding-right: calc(50% - 384px);
+  }
+  .img__link {
+    width: 40px;
+    height: 40px;
+  }
+  .title__box {
+    padding: 40px 20px;
+    gap: 35px;
+  }
+  .title__left {
+    gap: 15px;
+  }
+  .title h1 {
+    font-size: 54px;
+  }
+  .title h2 {
+    font-size: 26px;
+  }
+  .title__text {
+    font-size: 18px;
+  }
+  .title__img {
+    max-width: 350px;
+  }
+  .project__box {
+    padding: auto 30px;
+  }
+  .project__header {
+    font-size: 32px;
+  }
+  .project__elem {
+    gap: 20px;
+  }
+  .project__scroll {
+    width: 130%;
+  }
+  .project__h3 {
+    font-size: 24px;
+  }
+  .project__text {
+    font-size: 16px;
+  }
+  .footer__box {
+    padding: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */
