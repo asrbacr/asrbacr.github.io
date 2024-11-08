@@ -1,7 +1,7 @@
 $widthDesktop: 1400px;
 $widthLaptop: 1260px;
 $widthTablet: 768px;
-// $widthMobile: 1400px;
+$widthMobile: 576px;
 
 @mixin center($widthPage) {
   padding-left: calc(50% - $widthPage / 2);
@@ -176,7 +176,6 @@ $widthTablet: 768px;
   }
 
   .title {
-
     &__box {
       padding-top: 45px;
       padding-bottom: 45px;
@@ -284,6 +283,90 @@ $widthTablet: 768px;
   .footer {
     &__box {
       padding: 20px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .center {
+    @include center($widthTablet);
+  }
+
+  .img__link {
+    width: 35px;
+    height: 35px;
+  }
+
+  .title {
+    &__box {
+      padding: 20px 10px;
+      gap: 25px;
+    }
+
+    &__left {
+      gap: 10px;
+    }
+
+    h1 {
+      font-size: 40px;
+    }
+
+    h2 {
+      font-size: 20px;
+    }
+
+    &__text {
+      font-size: 14px;
+    }
+
+    &__img {
+      max-width: 250px;
+      border-radius: 25%;
+    }
+  }
+
+  .project {
+    &__box {
+      padding: auto 10px;
+    }
+
+    &__header {
+      font-size: 26px;
+    }
+
+    &__elem {
+      gap: 15px;
+    }
+
+    &__scroll {
+      width: 150%;
+    }
+
+    &__h3 {
+      font-size: 18px;
+    }
+
+    &__text {
+      font-size: 12px;
+    }
+  }
+
+  .footer {
+    &__box {
+      padding: 20px;
+      flex-direction: column;
+      align-items: start;
+      gap: 10px;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .title {
+    &__box {
+      flex-direction: column-reverse;
+      padding: 10px;
+      gap: 10px;
     }
   }
 }
