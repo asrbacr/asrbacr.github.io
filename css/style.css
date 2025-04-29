@@ -40,6 +40,13 @@
 .img__link {
   width: 50px;
   height: 50px;
+  transition: transform 0.2s ease-in-out;
+}
+.img__link:hover {
+  transform: scale(1.2);
+}
+.img__link:active {
+  transform: scale(0.9);
 }
 
 .title {
