@@ -135,6 +135,11 @@ $widthMobile: 576px;
   &__iframe {
     width: 100%;
     height: auto;
+
+    &.mob {
+      width: 50%;
+      margin-left: 25%;
+    }
   }
 
   &__data {

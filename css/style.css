@@ -115,6 +115,10 @@
   width: 100%;
   height: auto;
 }
+.project__iframe.mob {
+  width: 50%;
+  margin-left: 25%;
+}
 .project__data {
   max-width: 500px;
   display: flex;
